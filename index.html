@@ -1,0 +1,465 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Baloto — portal independiente de demostración, no oficial, de consulta ilustrativa de Baloto y Revancha.">
+  <title>Baloto | Consulta ilustrativa · No oficial</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="top-strip">
+    BALOTO · DEMOSTRACIÓN NO OFICIAL
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#inicio" class="logo" data-page="inicio">
+        <img src="logo.png" alt="Logotipo del portal" class="logo-img" style="width:150px;height:50px;object-fit:contain;">
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle"
+        aria-label="Abrir menú" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        
+        <a href="#inicio" class="nav-link active" data-page="inicio">Inicio</a>
+        <a href="#resultados" class="nav-link" data-page="resultados">Resultados</a>
+        <a href="#baloto" class="nav-link" data-page="baloto">Baloto</a>
+        <a href="#revancha" class="nav-link" data-page="revancha">Revancha</a>
+        <a href="#historial" class="nav-link" data-page="historial">
+  Historial
+</a>
+        <a href="#preguntas" class="nav-link" data-page="preguntas">Preguntas frecuentes</a>
+      </nav>
+
+      <button class="header-action" data-page="resultados">
+        Consultar resultados
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- INICIO -->
+    <section class="page active" id="inicio">
+      <div class="hero">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <span class="eyebrow">BIENVENIDO A BALOTO · DEMOSTRACIÓN</span>
+
+            <h1>
+              La emoción de cada sorteo
+              <span>comienza aquí.</span>
+            </h1>
+
+            <p>
+              Descubre un espacio dedicado a Baloto y Revancha.
+              Explora las combinaciones, conoce cada modalidad
+              y encuentra toda la información en un solo lugar.
+            </p>
+
+            <div class="hero-actions">
+              <button class="btn btn-yellow" data-page="resultados">
+                Consultar resultados <span>→</span>
+              </button>
+
+              <button class="btn btn-outline" data-page="baloto">
+                Conocer Baloto
+              </button>
+            </div>
+
+            <div class="hero-caption">
+              Información ilustrativa · Sitio independiente
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="visual-glow"></div>
+            <div class="hero-circle circle-one">08</div>
+            <div class="hero-circle circle-two">23</div>
+            <div class="hero-circle circle-three">31</div>
+            <div class="hero-circle circle-four">42</div>
+            <div class="hero-circle circle-five">14</div>
+            <div class="hero-circle circle-six">11</div>
+            <div class="visual-label">BALOTO · MUESTRA</div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section-container">
+        <div class="section-heading">
+          <span class="section-kicker">DESCUBRE NUESTRO PORTAL</span>
+          <h2>Tu espacio de consulta</h2>
+          <p>
+            Accede a la información de Baloto y Revancha
+            de forma sencilla, rápida y organizada.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon">◉</div>
+            <h3>Consulta de resultados</h3>
+            <p>
+              Visualiza combinaciones ilustrativas
+              organizadas en un solo espacio.
+            </p>
+            <button class="card-link" data-page="resultados">
+              Ver resultados →
+            </button>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">★</div>
+            <h3>Conoce Baloto</h3>
+            <p>
+              Descubre las características principales
+              de esta conocida modalidad de sorteo.
+            </p>
+            <button class="card-link" data-page="baloto">
+              Explorar Baloto →
+            </button>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">✦</div>
+            <h3>Conoce Revancha</h3>
+            <p>
+              Explora esta modalidad complementaria
+              y conoce sus particularidades.
+            </p>
+            <button class="card-link" data-page="revancha">
+              Explorar Revancha →
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="promo-section">
+        <div>
+          <span class="section-kicker">BALOTO Y REVANCHA</span>
+          <h2>Dos modalidades, un solo lugar.</h2>
+          <p>
+            Encuentra las combinaciones de muestra y
+            consulta la información de cada modalidad.
+          </p>
+        </div>
+
+        <button class="btn btn-yellow" data-page="resultados">
+          Ver combinaciones →
+        </button>
+      </section>
+    </section>
+
+    <!-- RESULTADOS -->
+    <section class="page" id="resultados" hidden>
+      <div class="page-banner">
+        <span class="section-kicker">CENTRO DE CONSULTA</span>
+        <h1>Consulta de resultados</h1>
+        <p>
+          Explora las combinaciones ilustrativas de
+          Baloto y Revancha.
+        </p>
+      </div>
+
+      <div class="section-container">
+        <div class="results-grid">
+
+          <article class="result-card">
+            <div class="result-card-header">
+              <div>
+                <span class="card-overline">COMBINACIÓN ILUSTRATIVA</span>
+                <h2>Baloto</h2>
+              </div>
+              <span class="result-pill">Muestra</span>
+            </div>
+
+            <p class="result-description">
+              Números ilustrativos para visualizar la presentación
+              de resultados.
+            </p>
+
+            <div class="ball-row" id="baloto-numbers"></div>
+
+            <div class="bonus-container">
+              <span>Número adicional</span>
+              <span class="bonus-ball" id="baloto-bonus"></span>
+            </div>
+
+            <button class="btn btn-blue" data-page="baloto">
+              Conocer Baloto →
+            </button>
+          </article>
+
+          <article class="result-card">
+            <div class="result-card-header">
+              <div>
+                <span class="card-overline">COMBINACIÓN ILUSTRATIVA</span>
+                <h2>Revancha</h2>
+              </div>
+              <span class="result-pill">Muestra</span>
+            </div>
+
+            <p class="result-description">
+              Consulta una combinación ilustrativa
+              correspondiente a esta modalidad.
+            </p>
+
+            <div class="ball-row" id="revancha-numbers"></div>
+
+            <div class="bonus-container">
+              <span>Número adicional</span>
+              <span class="bonus-ball" id="revancha-bonus"></span>
+            </div>
+
+            <button class="btn btn-blue" data-page="revancha">
+              Conocer Revancha →
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BALOTO -->
+    <section class="page" id="baloto" hidden>
+      <div class="page-banner">
+        <span class="section-kicker">CONOCE LA MODALIDAD</span>
+        <h1 class="banner-logo-title">
+  <!-- Logo del encabezado -->
+<!-- Logo del encabezado -->
+<img src="logo.png"
+     alt="Logotipo del portal"
+     class="logo-img">
+</h1>
+        <p>
+          Una de las modalidades de lotería más reconocidas
+          en Colombia.
+        </p>
+      </div>
+
+      <div class="section-container detail-layout">
+        <div class="detail-content">
+          <span class="section-kicker">ACERCA DE BALOTO</span>
+          <h2 class="conoce-logo" style="display:flex; align-items:center; gap:12px;">
+  <span>Conoce</span>
+  <img
+    src="logo.png"
+    alt="Logo"
+    style="width:145px; height:48px; object-fit:contain; flex-shrink:0;"
+  >
+</h2>
+          <p>
+            Baloto es un juego de suerte y azar conocido
+            por sus sorteos de números y su presencia
+            en Colombia.
+          </p>
+
+          <p>
+            En esta página independiente puedes explorar una presentación
+            ilustrativa de sus combinaciones y conocer
+            información general sobre esta modalidad.
+          </p>
+
+          <button class="btn btn-blue" data-page="resultados">
+            Consultar combinación →
+          </button>
+        </div>
+
+        <div class="detail-panel">
+          <span class="card-overline">BALOTO · MUESTRA</span>
+          <h3>Combinación ilustrativa</h3>
+          <div class="ball-row" id="baloto-detail-numbers"></div>
+          <div class="bonus-container">
+            <span>Número adicional</span>
+            <span class="bonus-ball" id="baloto-detail-bonus"></span>
+          </div>
+          <small>Los números son ficticios y no son resultados oficiales.</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVANCHA -->
+    <section class="page" id="revancha" hidden>
+      <div class="page-banner">
+        <span class="section-kicker">CONOCE LA MODALIDAD</span>
+        <h1 class="banner-logo-title">
+  <img
+    src="logo-revancha.png"
+    alt="Revancha"
+    class="banner-logo-revancha"
+  >
+</h1>
+        <p>
+          Descubre más sobre esta modalidad complementaria
+          de Baloto.
+        </p>
+      </div>
+
+      <div class="section-container detail-layout">
+        <div class="detail-content">
+          <span class="section-kicker">ACERCA DE REVANCHA</span>
+          <h2>Conoce Revancha</h2>
+
+          <p>
+            Revancha es una modalidad adicional vinculada
+            a Baloto, que ofrece otro sorteo con
+            su propia combinación de números.
+          </p>
+
+          <p>
+            Aquí puedes visualizar cómo se presenta
+            una combinación ilustrativa y conocer
+            información general de esta modalidad.
+          </p>
+
+          <button class="btn btn-blue" data-page="resultados">
+            Consultar combinación →
+          </button>
+        </div>
+
+        <div class="detail-panel">
+          <span class="card-overline">REVANCHA · MUESTRA</span>
+          <h3>Combinación ilustrativa</h3>
+          <div class="ball-row" id="revancha-detail-numbers"></div>
+          <div class="bonus-container">
+            <span>Número adicional</span>
+            <span class="bonus-ball" id="revancha-detail-bonus"></span>
+          </div>
+          <small>Los números son ficticios y no son resultados oficiales.</small>
+        </div>
+      </div>
+    </section>
+
+<!-- HISTORIAL ILUSTRATIVO -->
+<section class="page" id="historial" hidden>
+  <div class="page-banner">
+    <span class="section-kicker">ARCHIVO ILUSTRATIVO</span>
+    <h1>Historial de combinaciones</h1>
+    <p>
+      Explora registros ilustrativos de Baloto y Revancha
+      desde enero de 2025.
+    </p>
+  </div>
+
+  <div class="section-container">
+    <div class="history-toolbar">
+      <label for="history-year">Seleccionar año</label>
+      <select id="history-year">
+        <option value="todos">Todos los años</option>
+        <option value="2026">2026</option>
+        <option value="2025">2025</option>
+      </select>
+
+      <label for="history-month">Seleccionar mes</label>
+      <select id="history-month">
+        <option value="todos">Todos los meses</option>
+        <option value="0">Enero</option>
+        <option value="1">Febrero</option>
+        <option value="2">Marzo</option>
+        <option value="3">Abril</option>
+        <option value="4">Mayo</option>
+        <option value="5">Junio</option>
+        <option value="6">Julio</option>
+        <option value="7">Agosto</option>
+        <option value="8">Septiembre</option>
+        <option value="9">Octubre</option>
+        <option value="10">Noviembre</option>
+        <option value="11">Diciembre</option>
+      </select>
+    </div>
+
+    <p class="history-disclaimer">
+      Todos los registros de esta sección son ficticios.
+      Las fechas y combinaciones no representan
+      resultados oficiales.
+    </p>
+
+    <div id="history-records" class="history-records"></div>
+
+    <div class="history-pagination">
+      <button class="btn btn-blue" id="history-more">
+        Ver más registros
+      </button>
+    </div>
+  </div>
+</section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="page" id="preguntas" hidden>
+      <div class="page-banner">
+        <span class="section-kicker">INFORMACIÓN PARA VISITANTES</span>
+        <h1>Preguntas frecuentes</h1>
+        <p>Encuentra respuestas a las dudas más comunes.</p>
+      </div>
+
+      <div class="section-container faq-container">
+        <details class="faq-item">
+          <summary>¿Qué es Baloto?</summary>
+          <p>
+            Baloto es un juego de suerte y azar que utiliza
+            combinaciones de números para determinar
+            los resultados de sus sorteos.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>¿Qué es Revancha?</summary>
+          <p>
+            Es una modalidad complementaria de Baloto
+            que cuenta con un sorteo adicional.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>¿Los resultados mostrados son oficiales?</summary>
+          <p>
+            Las combinaciones de esta demostración son
+            ilustrativas y no corresponden a sorteos reales.
+          </p>
+        </details>
+
+
+        <details class="faq-item">
+          <summary>¿Puedo realizar apuestas desde esta página?</summary>
+          <p>
+            Si. Esta página es un portal independiente
+            de información demostrativa y ofrece
+            apuestas, compras y muchos premios.
+          </p>
+        </details>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">BALOTO <small>· DEMOSTRACIÓN NO OFICIAL</small></div>
+        <p>Tu espacio independiente de consulta ilustrativa.</p>
+      </div>
+
+      <div class="footer-links">
+        <button data-page="inicio">Inicio</button>
+        <button data-page="resultados">Resultados</button>
+        <button data-page="preguntas">Preguntas frecuentes</button>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Portal demostrativo independiente.</span>
+      <span>
+        Sitio demostrativo independiente, afiliado al operador de Coljuegos.
+        Con apuestas y resultados oficiales.
+      </span>
+    </div>
+  </footer>
+
+</body>
+</html>
